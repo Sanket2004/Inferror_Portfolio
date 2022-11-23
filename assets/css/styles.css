@@ -1,14 +1,13 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Open+Sans:wght@300&display=swap');
 @font-face {
   font-family: 'Product Sans';
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 
 /*=============== VARIABLES CSS ===============*/
@@ -19,7 +18,7 @@
   --hue: 174;
   --sat: 63%;
   --first-color: #e746b0;
-  --lite-color: rgb(70 50 70);
+  --lite-color:rgba( 255, 255, 255, 0.25 );
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: #fff;
   --lite-body:rgba(120, 2, 100, 0.198);
@@ -30,7 +29,7 @@
   --secondary-color: #fff;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Product Sans', sans-serif;
+  --body-font: 'Ubuntu Mono', monospace;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --tiny-font-size: .625rem;
@@ -125,6 +124,7 @@ a {
   z-index: var(--z-fixed);
   transition: .4s;
   border-radius: 0 0 25px 25px;
+  box-shadow: 0 8px 32px 0 rgba(32, 32, 35, 13%);
 }
 
 /*=============== NAV ===============*/
@@ -154,6 +154,7 @@ a {
     bottom: 0;
     left: 0;
     background-color: var(--lite-color);
+    backdrop-filter: blur(15px);
     box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
     width: 100%;
     height: 4rem;
@@ -327,21 +328,20 @@ a {
   align-items: center;
   margin-top: 1vh;
   background-color: rgba(255, 255, 255, 0.132);
-  border-radius: 50px;
+  box-shadow: -4px -3px 45px 21px rgba(97, 97, 97, 13%);
+  border-radius: 20px;
   margin-left: 2vw;
   margin-right: 2vw;
   height: 77vh;
   z-index: +1;
 }
 .inf{
-  font-family: 'Abril Fatface', cursive;
   font-size: 55px;
  color: white;
 }
 .heading{
   font-size:35px;
   color: white;
-  font-family: 'Open Sans', sans-serif;
 }
 .landing-img{
   margin-top: 3%;
@@ -356,7 +356,6 @@ a {
   color:white;
   font-size: 19px;
   font-weight:lighter;
-font-family: 'Open Sans', sans-serif;
   margin-top: 45px;
 }
 .bt1{
@@ -368,7 +367,6 @@ font-family: 'Open Sans', sans-serif;
   background-color: rgb(190, 15, 167);
   border: coral;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
 }
 .bt1:hover{
   background-color: rgba(174, 130, 115, 0);
@@ -480,15 +478,23 @@ font-family: 'Open Sans', sans-serif;
     display: list-item;
     }
     .landing-img{
-      height:30vh;
+      height:-webkit-fill-available;
+      width: -webkit-fill-available;
+      opacity: 90%;
     }
     .frame1{
       width: 90%;
       margin-left: 3vw;
+      width: 90%;
+      position: absolute;
+      margin-left: 3vw;
+      bottom: 0;
+      z-index: 1;
     }
     .landing{
       margin-top: -25px;
       padding-top: 4vh;
+      height: -webkit-fill-available;
     }
   }
   @media screen  and (max-width: 480px){
@@ -503,8 +509,10 @@ font-family: 'Open Sans', sans-serif;
       margin-top: 40px;
     }
     .landing-img{
-      height:20vh;
+      height:-webkit-fill-available;
+      width: -webkit-fill-available;
       margin-top: 5vh;
+      
     }
     .bt1{
       margin-top: 5vh;
@@ -512,6 +520,7 @@ font-family: 'Open Sans', sans-serif;
     .landing{
       margin-top: -45px;
       padding-top: 4vh;
+      height: -webkit-fill-available;
     }
     .eff{
       height: 20vh;
@@ -525,4 +534,34 @@ font-family: 'Open Sans', sans-serif;
         }
   }
 
+/* Fill button styling */
+.fill {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 35px 13px;
+  margin-top: 20px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
 
+.fill::after {
+  content: "";
+  background-color: #dcbaff;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* End of Fill Button  */
