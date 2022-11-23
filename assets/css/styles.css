@@ -1,6 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Open+Sans:wght@300&display=swap');
 @font-face {
   font-family: 'Product Sans';
   font-style: normal;
@@ -64,7 +66,7 @@ html.dark {
 }
 
 html.dark {
-  background-color:rgba(30, 2, 33, 0.919);
+  background-color:#0c0736;
   color: var(--primary-color);
 }
 
@@ -318,3 +320,209 @@ a {
   
   background: rgba(30, 2, 33, 0.919); 
 } 
+/* for landing page */
+.landing{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1vh;
+  background-color: rgba(255, 255, 255, 0.132);
+  border-radius: 50px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  height: 77vh;
+  z-index: +1;
+}
+.inf{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 55px;
+ color: white;
+}
+.heading{
+  font-size:35px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.landing-img{
+  margin-top: 3%;
+  margin-left: 3%;
+  height:70vh;
+  z-index: +1;
+}
+.frame1{
+  width: 40%;
+}
+.para-section{
+  color:white;
+  font-size: 19px;
+  font-weight:lighter;
+font-family: 'Open Sans', sans-serif;
+  margin-top: 45px;
+}
+.bt1{
+  width: 30vh;
+  margin-top:6%;
+  color: wheat;
+  height: 5vh;
+  border-radius: 15px;
+  background-color: rgb(190, 15, 167);
+  border: coral;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+.bt1:hover{
+  background-color: rgba(174, 130, 115, 0);
+  color: bisque;
+  border: 2px solid rgb(190, 15, 167);
+}
+.eff{
+  height: 50vh;
+  width: 50vh;
+  z-index: -1;
+  background: linear-gradient(#c370d4, #83bcfc);
+  position: absolute;
+  border-radius: 600px;
+  filter: blur(65px);
+}
+.eff1{
+  height: 70vh;
+  width: 70vh;
+  z-index: -1;
+  background: linear-gradient(rgb(187, 68, 194), rgb(238, 66, 23));
+  position: absolute;
+  border-radius: 600px;
+  filter: blur(75px);
+  margin-left:25vh;
+  margin-top: 20vw;
+}
+/* designing of landing page ends */
+/* responsiveness of the landing page below */
+@media screen and (max-width: 1490px) {
+  .landing{
+  justify-content: center;
+  }
+  .landing-img{
+    height:35vh;
+  }
+  .frame1{
+    width: 40%;
+    margin-left: 3vw;
+  }
+  .heading{
+    font-size:25px;
+  }
+  .inf{
+    font-size: 40px;
+  }
+  .para-section{
+    font-size: 15px;
+  }
+  .eff{
+    height: 40vh;
+    width: 40vh;
+  }
+  .eff1{
+    height: 50vh;
+    width: 50vh;
+    margin-left:10vh;
+    margin-top: 20vw;
+  }
+}
+@media screen  and (max-width: 1144px){
+  .eff{
+    height: 30vh;
+    width: 30vh;
+  }
+  .eff1{
+    height: 40vh;
+    width: 40vh;
+    margin-left:5vh;
+    margin-top: 15vw;
+      }
+  .inf{
+    font-size: 30px;
+  }
+}
+@media screen  and (max-width: 980px){
+  .landing-img{
+    height:30vh;
+  }
+  .frame1{
+    width: 50%;
+    margin-left: 3vw;
+  }
+  .heading{
+    font-size:20px;
+  }
+  .inf{
+    font-size: 30px;
+  }
+  .para-section{
+    font-size: 13px;
+  }
+  .bt1{
+    width: 20vh;
+    height: 4vh;
+  }
+  .eff{
+    height: 25vh;
+    width: 25vh;
+  }
+  .eff1{
+    height: 35vh;
+    width: 35vh;
+    margin-left:5vh;
+    margin-top: 15vw;
+      }
+}
+@media screen  and (max-width: 780px){
+  .landing{
+    display: list-item;
+    }
+    .landing-img{
+      height:30vh;
+    }
+    .frame1{
+      width: 90%;
+      margin-left: 3vw;
+    }
+    .landing{
+      margin-top: -25px;
+      padding-top: 4vh;
+    }
+  }
+  @media screen  and (max-width: 480px){
+    .heading{
+      font-size:20px;
+    }
+    .inf{
+      font-size: 30px;
+    }
+    .para-section{
+      font-size: 13px;
+      margin-top: 40px;
+    }
+    .landing-img{
+      height:20vh;
+      margin-top: 5vh;
+    }
+    .bt1{
+      margin-top: 5vh;
+    }
+    .landing{
+      margin-top: -45px;
+      padding-top: 4vh;
+    }
+    .eff{
+      height: 20vh;
+      width: 20vh;
+    }
+    .eff1{
+      height: 30vh;
+      width: 30vh;
+      margin-left:5vh;
+      margin-top: 10vw;
+        }
+  }
+
+
