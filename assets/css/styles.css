@@ -480,12 +480,11 @@ a {
     }
     .frame1{
       width: 90%;
-      margin-left: 3vw;
       width: 90%;
       position: absolute;
-      margin-left: 3vw;
       bottom: 0;
       z-index: 1;
+      text-align: center;
     }
     .landing{
       margin-top: -25px;
