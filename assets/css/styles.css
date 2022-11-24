@@ -1,14 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-@font-face {
-  font-family: 'Product Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-}
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
+	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -22,14 +14,14 @@
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: #fff;
   --lite-body:rgba(120, 2, 100, 0.198);
-  --text-color: hsl(var(--hue), 8%, 35%);
+  --text-color: rgb(0, 0, 0);
   --body-color: rgba(30, 2, 33, 0.919);
   --container-color: rgb(34, 0, 49);
   --primary-color: #000;
   --secondary-color: #fff;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Ubuntu Mono', monospace;
+  --body-font: 'Anonymous Pro', monospace;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --tiny-font-size: .625rem;
@@ -185,11 +177,13 @@ a {
 
 .nav__name {
   font-size: var(--tiny-font-size);
+  color: var(--primary-color);
   /* display: none;*/ /* Minimalist design, hidden labels */
 }
 
 .nav__icon {
   font-size: 1.5rem;
+  color: var(--primary-color);
 }
 
 /*Active link*/
@@ -298,7 +292,7 @@ a {
   display: block;
   height: calc(100% - 10px);
   width: calc(100% - 10px);
-  background-color: rgba(30, 2, 33, 0.919);
+  background-color: var(--lite-color);
   border-radius: 20%;
   display: grid;
   place-items: center;
@@ -337,12 +331,14 @@ a {
 }
 .inf{
   font-size: 55px;
- color: white;
+  color: var(--primary-color);
+  font-weight: 700;
 }
 .heading{
   font-size:35px;
-  color: white;
+  color: var(--primary-color);
 }
+
 .landing-img{
   margin-top: 3%;
   margin-left: 3%;
@@ -353,9 +349,9 @@ a {
   width: 40%;
 }
 .para-section{
-  color:white;
+  color: var(--primary-color);
   font-size: 19px;
-  font-weight:lighter;
+  font-weight:bolder;
   margin-top: 45px;
 }
 .bt1{
@@ -537,11 +533,13 @@ a {
 /* Fill button styling */
 .fill {
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 700;
   letter-spacing: 1px;
   padding: 13px 35px 13px;
   margin-top: 20px;
   outline: 0;
+  color: var(--primary-color);
+  border-radius: 5%;
   border: 1px solid black;
   cursor: pointer;
   position: relative;
@@ -555,6 +553,7 @@ a {
   z-index: -1;
   position: absolute;
   height: 100%;
+  border-radius: 5%;
   top: 7px;
   left: 7px;
   transition: 0.2s;
