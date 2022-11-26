@@ -626,10 +626,13 @@
 @media screen and (max-width: 980px) {
     .about{
       flex-direction: column-reverse;
+      margin-top: 15vh;
+      margin-left: 3vh;
+      margin-right: 3vh;
     }
     .r-section{
         width: 100%;
-        margin-bottom: 22vh;
+        margin-bottom: 40vh;
     }
     .testim{
         width: 100%;
@@ -639,6 +642,26 @@
     }
     .about-para{
         font-size: 17px;
+    }
+
+  }
+  @media screen and (max-width: 530px) {
+    .about{
+        margin-top: 18vh;
+    }
+    .r-section{
+        margin-bottom: 48vh ;
+    }
+    .about-para{
+        font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 345px) {
+    .about{
+        margin-top: 18vh;
+    }
+    .r-section{
+        margin-bottom: 55vh ;
     }
   }
   /* responsiveness of about sction ends here*/
