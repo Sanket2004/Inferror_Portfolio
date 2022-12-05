@@ -8,4 +8,6 @@ This project is made possible by our valuable contributors .Thanks to all the **
 
 ![Contributors](https://contributors-img.web.app/image?repo=Sanket2004/Inferror_Portfolio)
 
+<h1 align="center"><code>&nbsp;<a href="https://inferror.netlify.app/">Live Site</a>&nbsp;</code></h1>
+
 <br>
