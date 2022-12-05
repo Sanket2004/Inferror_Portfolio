@@ -563,3 +563,155 @@ a {
   left: 0px;
 }
 /* End of Fill Button  */
+/* <------------our skills section -----------------> */
+.box111, .box112, .box113{
+  background-color:rgba(255, 255, 255, 0.125);
+  border-radius: 15px;
+  width: 25vw;
+  margin: 2px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box112{
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.skills-1st{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.skills-head{
+  color:rgb(215, 64, 220);
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.skills-para{
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.box111:hover{
+  background-color: rgba(255, 255, 255, 0.211);
+}
+.box112:hover{
+  background-color: rgba(255, 255, 255, 0.211);
+}
+.box113:hover{
+  background-color: rgba(255, 255, 255, 0.211);
+}
+.image1{
+  height:60px;
+  margin-top: 35px;
+}
+.image2{
+  height:70px;
+  margin-top: 35px;
+}
+.image3{
+  height:60px;
+  margin-top: 35px;
+} 
+.box110{
+  display: flex;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -130px;
+}
+/* responsiveness of skills section */
+@media screen and (max-width: 1200px) {
+  .box111,.box112,.box113{
+      width:28vw;
+  }
+  .box112{
+      margin-left: 55px;
+      margin-right: 55px;
+  }
+  .skills-para{
+      font-size: 16px;
+  }
+  .skills-head{
+      font-size: 25px;
+  }
+}
+@media screen and (max-width: 900px) {
+      .box110{
+          flex-direction: column;
+      }
+      .box112{
+          margin-left: 0px;
+          margin-right: 0px;
+      }
+      .box111,.box112,.box113{
+          width:70vw;
+      }
+      .skills-para{
+          font-size: 20px;
+      }
+}
+@media screen and (max-width: 480px){
+  .box111,.box112,.box113{
+      width:90vw;
+  }
+  .skills-para{
+      font-size: 19px;
+  }
+}
+@media screen and (max-width: 310px){
+  .box111,.box112,.box113{
+      width:90vw;
+  }
+  .skills-para{
+      font-size: 15px;
+  }
+}
+@media screen and (max-width: 980px){
+  .skills{
+  margin-top: 8vh;
+
+}
+}
+@media screen and (max-width: 700px){
+  .skills{
+  margin-top: 15vh;
+
+}
+}
+@media screen and (max-width: 580px){
+  .skills{
+    margin-top: 25vh;
+  
+  }
+}
+@media screen and (max-width: 480px){
+  .skills{
+    margin-top: 35vh;
+  
+  }
+}
+@media screen and (max-width: 400px){
+  .skills{
+    margin-top: 43vh;
+  
+  }
+}
+@media screen and (max-width: 310px){
+  .skills{
+    margin-top: 70vh;
+  
+  }
+}
+/* <------------end of our skills section -----------------> */
