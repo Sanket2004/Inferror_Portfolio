@@ -715,3 +715,190 @@ a {
   }
 }
 /* <------------end of our skills section -----------------> */
+/*<---------------- our project// portfolio section starts here------------------> */
+.portfolio-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: -210px;
+}
+.portbox-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 17px;
+  width: 75%;
+  margin-bottom: 50vh;
+}
+.box101{
+  height: 220px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 120px;
+  margin-left: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.639);
+  background-color: rgba(255, 255, 255, 0.135);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.img-port{
+  height: 130px;
+  width: 130px;
+  border-radius: 1200px;
+  margin-top: -120px;
+  margin-bottom: 37px;
+  z-index: 1;
+}
+.eff-port{
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 117, 209);
+  position: absolute;
+  z-index: -1;
+  margin-top:-20vh ;
+  filter: blur(60px);
+
+}
+.text-sec1{
+  height: 65%;
+  font-size: 14px;
+  color: whitesmoke;
+  margin-bottom: -104px;
+  z-index: 1;
+
+}
+.h-po{
+  color: rgb(248, 114, 230);
+  margin-bottom: 8px;
+}
+.p-sec{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.port-head{
+  font-size: 37px;
+}
+/* responsiveness section */
+@media screen and (max-width:1300px){
+  .portbox-section{
+      grid-template-columns: 1fr 1fr ;
+  }
+}
+@media screen and (max-width:920px){
+  .text-sec1{
+      height: 65%;
+      font-size: 13px;
+      color: whitesmoke;
+  }
+}
+@media screen and (max-width:700px){
+  .text-sec1{
+      height: 65%;
+      font-size: 12px;
+      color: whitesmoke;
+  }
+  .img-port{
+      height: 100px;
+      width: 100px;
+  }
+}
+@media screen and (max-width:600px){
+  .portbox-section{
+      grid-template-columns: 1fr ;
+  }
+  .text-sec1{
+      font-size: 14px;
+      }
+      .img-port{
+          height: 110px;
+          width: 110px;
+      }
+      .box101{
+          margin-top: 80px;
+      }
+}
+@media screen and (max-width:450px){
+  .text-sec1{
+      font-size: 13px;
+      }
+      .img-port{
+          height: 110px;
+          width: 110px;
+      }
+}
+@media screen and (max-width:340px){
+  .text-sec1{
+      font-size: 12px;
+      }
+      .img-port{
+          height: 100px;
+          width: 100px;
+      }
+      .h-po{
+          font-size: 18px;
+      }
+}
+@media screen and (max-width:230px){
+  .text-sec1{
+      font-size: 10px;
+      }
+      .img-port{
+          height: 80px;
+          width: 80px;
+      }
+      .h-po{
+          font-size: 18px;
+      }
+}
+@media screen and (max-width:1000px){
+  .portfolio-section{
+    margin-top: -200px;
+  }
+}
+@media screen and (max-width:983px){
+  .portfolio-section{
+    margin-top: -5px;
+  }
+}
+@media screen and (max-width:905px){
+  .portfolio-section{
+    margin-top: 670px;
+  }
+}
+@media screen and (max-width:705px){
+  .portfolio-section{
+    margin-top: 800px;
+  }
+}
+@media screen and (max-width:585px){
+  .portfolio-section{
+    margin-top: 970px;
+  }
+}
+@media screen and (max-width:435px){
+  .portfolio-section{
+    margin-top: 1070px;
+  }
+}
+@media screen and (max-width:350px){
+  .portfolio-section{
+    margin-top: 1170px;
+  }
+  .port-head{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:260px){
+  .portfolio-section{
+    margin-top: 1200px;
+  }
+  .port-head{
+    font-size: 28px;
+  }
+}
+/*<----------------end of our project// portfolio section ------------------> */
