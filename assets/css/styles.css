@@ -902,3 +902,298 @@ a {
   }
 }
 /*<----------------end of our project// portfolio section ------------------> */
+/*<---------------- Contact Us section starts here------------------> */
+.card007{
+  margin-top: 65px;
+}
+.box007{
+  width: 85vw;
+  height: 586px;
+  display: flex;
+  justify-content: space-around;
+
+  background: #ffffff2a;
+  border-radius: 50px;
+}
+.img007{
+  width: auto;
+  height: 80vh;
+}
+.r007-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  width: 80%;
+  text-align: center;
+}
+.r007-sec input{
+  margin: 8px;
+  padding: 12px;
+  border-radius: 25px;
+  width: 300px;
+  border: 1px solid;
+}
+.btn007{
+  display: inline-block;
+  text-align: center;
+  padding: 10px 10px 10px;
+  margin: 8px;
+  height: 45px;
+  width: 310px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(201, 95, 175);
+  color: white;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.btn007:hover{
+  background-color: rgb(175, 40, 130);
+  color: burlywood;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.msg007{
+  height: 120px;
+  width: 210px;
+}
+.r007-sec h1{
+  margin-bottom: 30px;
+  font-family:'Times New Roman', Times, serif;
+}
+.icon1{
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  transition: 0.3s linear;
+}
+.icon1:hover{
+  box-shadow: 0 15px 19px 0 rgba(0,0,0,0.24),0 20px 53px 0 rgba(0,0,0,0.19);
+  transform: scale(1.2);
+}
+.icon2{
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  transition: 0.3s linear;
+}
+.icon2:hover{
+  box-shadow: 0 15px 19px 0 rgba(0,0,0,0.24),0 20px 53px 0 rgba(0,0,0,0.19);
+  transform: scale(1.2);
+}
+.icon3{
+  height: 53px;
+  width: 53px;
+  margin-right: 20px;
+  transition: 0.3s linear;
+}
+.icon3:hover{
+  box-shadow: 0 15px 19px 0 rgba(0,0,0,0.24),0 20px 53px 0 rgba(0,0,0,0.19);
+  transform: scale(1.2);
+}
+.icon4{
+  height: 50px;
+  width: 50px;
+  transition: 0.3s linear;
+}
+.icon4:hover{
+  box-shadow: 0 15px 19px 0 rgba(0,0,0,0.24),0 20px 53px 0 rgba(0,0,0,0.19);
+  transform: scale(1.2);
+}
+.b-sec{
+  display: flex;
+  position: absolute;
+  margin-top: 575px;
+}
+.contact-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 1200px){
+  .img007{
+      height: 80vh;
+      width: 40vw;
+  }
+  .r007-sec input{
+      width: 250px;
+  }
+  .btn007{
+      width: 260px ;
+  }
+  .icon1,.icon2,.icon4{
+      height: 40px;
+      width: 40px;
+  }
+  .icon3{
+      height: 43px;
+      width: 43px;
+  }
+}
+@media screen and (max-width: 800px){
+  .img007{
+      height: 60vh;
+      width: 37vw;
+      margin-top: 90px;
+  }
+  .r007-sec input{
+      width: 220px;
+  }
+  .btn007{
+      width: 230px ;
+  }
+  .icon1,.icon2,.icon4{
+      height: 35px;
+      width: 35px;
+  }
+  .icon3{
+      height: 37px;
+      width: 37px;
+  }
+  .r007-sec h1{
+      font-size: 27px;
+  }
+}
+@media screen and (max-width: 650px){
+  .img007{
+      display: none;
+  }
+  .r007-sec input{
+      width: 310px;
+  }
+  .btn007{
+      width: 320px ;
+  }
+  .icon1,.icon2,.icon4{
+      height: 40px;
+      width: 40px;
+  }
+  .icon3{
+      height: 42px;
+      width: 42px;
+  }
+  .r007-sec h1{
+      font-size: 32px;
+  }
+}
+@media screen and (max-width: 480px){
+  .r007-sec h1{
+      font-size: 25px;
+  }
+  .r007-sec input{
+      width: 250px;
+  }
+  .btn007{
+      width: 260px ;
+  }
+  .icon1,.icon2,.icon4{
+      height: 35px;
+      width: 35px;
+  }
+  .icon3{
+      height: 37px;
+      width: 37px;
+  }
+}
+@media screen and (max-width: 380px){
+  .r007-sec h1{
+      font-size: 20px;
+  }
+  .r007-sec input{
+      width: 200px;
+  }
+  .btn007{
+      width: 210px ;
+  }
+  .icon1,.icon2,.icon4{
+      height: 30px;
+      width: 30px;
+  }
+  .icon3{
+      height: 32px;
+      width: 32px;
+  }
+}
+@media screen and (max-width: 300px){
+  .r007-sec h1{
+      font-size: 15px;
+  }
+  .r007-sec input{
+      width: 160px;
+  }
+  .btn007{
+      width: 170px ;
+  }
+  .icon1,.icon2,.icon4{
+      height: 25px;
+      width: 25px;
+  }
+  .icon3{
+      height: 27px;
+      width: 27px;
+  }
+}
+@media screen and (max-width: 1301px){
+  .contact-section{
+    margin-top: 260px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 985px){
+  .contact-section{
+    margin-top: 440px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 905px){
+  .contact-section{
+    margin-top: 1100px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 770px){
+  .contact-section{
+    margin-top: 1100px;
+    padding-bottom: 100px;
+  }
+
+}
+@media screen and (max-width: 712px){
+  .contact-section{
+    margin-top: 1200px;
+    padding-bottom: 100px;
+  }
+
+}
+@media screen and (max-width: 610px){
+  .contact-section{
+    margin-top: 2100px;
+    padding-bottom: 100px;
+  }
+
+}
+@media screen and (max-width: 585px){
+  .contact-section{
+    margin-top: 2200px;
+    padding-bottom: 100px;
+  }
+
+}
+@media screen and (max-width: 435px){
+  .contact-section{
+    margin-top: 2300px;
+    padding-bottom: 100px;
+  }
+
+}
+@media screen and (max-width: 350px){
+  .contact-section{
+    margin-top: 2350px;
+    padding-bottom: 100px;
+  }
+
+}
