@@ -48,16 +48,18 @@
 }
 .about-para{
     margin-top: 10vh;
-    font-family:monospace;
+    color: var(--primary-color);
     font-size: 17px;
 }
 .heading11{
     font-size: 5vh;
+    color: var(--primary-color);
+
 }
 .testim .arrow {
     display: block;
     position: absolute;
-    color: #eee;
+    color: var(--primary-color);
     cursor: pointer;
     font-size: 2em;
     top: 50%;
@@ -175,7 +177,7 @@
 
 .testim .cont div p {
     font-size: 1.15em;
-    color: #eee;
+    color: var(--primary-color);
     width: 80%;
     margin: auto;
 }
